@@ -1,0 +1,17 @@
+.to-do{
+    background-color: #fff;
+}
+
+.to-do-row{
+    justify-content: flex-end;
+}
+
+.action{
+    transition: all .3s linear;
+    opacity: .3;
+    cursor: pointer;
+}
+
+.action::hover{
+    opacity: 1;
+}

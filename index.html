@@ -1,25 +1,48 @@
-<html>
+
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
-	<title>Inspire</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Engstrom Inspire</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body id="body">
-	<div id="weather">
-		Your Weather Template
-	</div>
+	<div class="container">
 
-	<div id="quote">
-		The Quote
-	</div>
+		<div id="weather">
+			Your Weather Template
+		</div>
 
-	<div id="todo">
-		<form onsubmit=""></form>
-		A Todo List
-	</div>
+		<div id="quote">
+			The Quote
+		</div>
 
+		<div class="row to-do-row">
+			<div class="col-sm-3 to-do">
+				<div id="todo">
+					<span>To Do List</span>
+					<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
+						<i class="fas fa-plus action" onclick="app.controllers.todoController.addTodoFromForm(event)"></i>
+						<div class="form-group">
+							<input name="item" type="text" class="form-control" id="input-item" placeholder="Add To Do Item">
+						</div>
+						<!-- I haven't decided if I want this button here or not -->
+						<!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+					</form>
+					<div id="to-do-items">
+						<!-- to do list gets drawn here -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
 
 
 
