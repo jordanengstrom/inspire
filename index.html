@@ -26,9 +26,10 @@
 		<div class="row to-do-row">
 			<div class="col-sm-3 to-do">
 				<div id="todo">
-					<span>To Do List</span>
+					<div class="row to-do-title">
+						<span>To Do List: <span id="task-count">...</span> </span><i class="fas fa-plus action" onclick="app.controllers.todoController.addTodoFromForm(event)"></i>
+					</div>
 					<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
-						<i class="fas fa-plus action" onclick="app.controllers.todoController.addTodoFromForm(event)"></i>
 						<div class="form-group">
 							<input name="item" type="text" class="form-control" id="input-item" placeholder="Add To Do Item">
 						</div>

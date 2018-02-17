@@ -1,9 +1,18 @@
 .to-do{
     background-color: #fff;
+    padding: 16px 0px 16px 0px;
 }
 
 .to-do-row{
     justify-content: flex-end;
+}
+
+.to-do-title{
+    justify-content: space-around;
+}
+
+.to-do-item{
+    justify-content: center;
 }
 
 .action{

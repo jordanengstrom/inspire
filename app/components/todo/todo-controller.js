@@ -17,17 +17,20 @@ function TodoController() {
 		console.log(todos);
 		var template = '';
 		var itemElem = document.getElementById('to-do-items');
+		var totalElem = document.getElementById('task-count');
 		for (var i = 0; i < todos.length; i++) {
 			var task = todos[i];
 			template += `
-			<div class="row">
-				<input onclick="app.controllers.todoController.toggleTodoStatus('${task.id}')" class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="done" aria-label="checkbox">
+			<div class="row to-do-item">
+				<input onclick="app.controllers.todoController.toggleTodoStatus('${task.id}')" class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="done" aria-label="checkbox" ${task.status == 'true'? 'checked' : ''}>
 				<p>${task.item}<p>
 				<i class="fas fa-minus-circle" onclick="app.controllers.todoController.removeTodo('${task.id}')"></i>
 			</div>
 			`
 		}
+
 		itemElem.innerHTML = template;
+		totalElem.innerHTML = todos.length;
 	}
 
 	this.addTodoFromForm = function (e) {
