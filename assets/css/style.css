@@ -1,3 +1,36 @@
+#body{
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.containter{
+    align-items: center;
+}
+
+.line{
+    width: 0px;
+    height: 1px;
+    background: #fff;
+    margin: auto;
+    margin-bottom: 12px;
+    margin-top: 18px;
+}
+
+.top-row{
+    justify-content: space-between;
+}
+
+#weather{
+    background-color: #fff;
+    opacity: 0.75;
+}
+
+.quote-row{
+    background-color: #fff;
+    opacity: 0.75;
+}
+
 .to-do{
     background-color: #fff;
     padding: 16px 0px 16px 0px;

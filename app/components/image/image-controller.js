@@ -6,11 +6,9 @@ function ImageController() {
 	function getImage() {
 		imageService.getImage(draw);
 	}
-
 	function draw(url) {
 		document.getElementById("body").style.background = `url('${url}')`;
 	}
-
 	getImage();
 }
 

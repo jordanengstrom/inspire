@@ -1,4 +1,3 @@
-
 <html lang="en">
 
 <head>
@@ -15,19 +14,21 @@
 <body id="body">
 	<div class="container">
 
-		<div id="weather">
-			Your Weather Template
-		</div>
+		<!-- <div class="row weather-row"></div> -->
 
-		<div id="quote">
-			The Quote
-		</div>
+		<div class="row top-row">
 
-		<div class="row to-do-row">
+			<div class="col-sm-3" id="weather">
+				Your Weather Template
+			</div>
+
 			<div class="col-sm-3 to-do">
 				<div id="todo">
 					<div class="row to-do-title">
-						<span>To Do List: <span id="task-count">...</span> </span><i class="fas fa-plus action" onclick="app.controllers.todoController.addTodoFromForm(event)"></i>
+						<span>To Do List:
+							<span id="task-count">...</span>
+						</span>
+						<i class="fas fa-plus action" onclick="app.controllers.todoController.addTodoFromForm(event)"></i>
 					</div>
 					<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
 						<div class="form-group">
@@ -42,8 +43,15 @@
 				</div>
 			</div>
 		</div>
-
+		<div class="row quote-row">
+			<div class="line"></div>
+			<div id="quote">
+				The Quote
+			</div>
+			<div class="line"></div>
+		</div>
 	</div>
+	
 
 
 

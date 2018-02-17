@@ -1,8 +1,19 @@
 function QuoteController(){
 
-	var qs = new QuoteService()
+	var quoteService = new QuoteService();
+	var quoteElem = document.getElementById('quote');
+	
+	quoteService.getQuote(draw);
+	
+	function draw(quote, author){
+		var template = `
+		<blockquote cite="${author}">
+			<h3>
+				${quote}
+			</h3>
+		</blockquote>
+		`
+		quoteElem.innerHTML = template;
+	}
 
-	qs.getQuote(function(quote){
-		console.log('What is the quote', quote)
-	})
 }
