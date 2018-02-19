@@ -24,7 +24,7 @@
 #weather-shape{
     height: 150px;
     background-color: #fff;
-    opacity: 0.75;
+    opacity: 0.9;
     padding: 25px 25px 25px 44px;
     border-bottom-left-radius: 25% 45%;
     border-bottom-right-radius: 25% 45%;
@@ -32,6 +32,19 @@
 
 .fa-sun{
     color: #ffe526;
+}
+
+h3{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#author{
+    display: none;
+}
+.quote-row:hover #author{
+    display: block;
+    transition: all 3s;
 }
 
 .quote-row{
@@ -51,27 +64,61 @@
 
 .to-do{
     background-color: #fff;
+    opacity: 0.9;
     padding: 16px 0px 16px 0px;
+    border-bottom-left-radius: 10% 15%;
+    border-bottom-right-radius: 10% 15%;
 }
 
 .to-do-row{
     justify-content: flex-end;
 }
 
+.form-row{
+    justify-content: center;
+    padding-top: 10px;
+    margin-bottom: -18px;
+}
+
 .to-do-title{
     justify-content: space-around;
 }
 
-.to-do-item{
-    justify-content: center;
+hr{
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
 }
 
-.action{
-    transition: all .3s linear;
-    opacity: .3;
+.to-do-item{
+    width: 285px;
+    justify-content: left;
+    align-items: center;
+    padding-left: 37px;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-left: 0px;
+    padding-top: 5px;
+    border-top: solid 1px #cdcfd3;
+}
+
+.task-text{
+    padding-left: 15px;
+}
+
+.fa-minus-circle{
+    justify-content: flex-end;
+    transition: all .1s linear;
     cursor: pointer;
 }
 
-.action::hover{
+.fa-minus-circle:hover{
     opacity: 1;
+    color: #e87258;
+}
+
+
+.form-check-input{
+    display: inline-block;
+    vertical-align: middle;
 }

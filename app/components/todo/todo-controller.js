@@ -22,9 +22,13 @@ function TodoController() {
 			var task = todos[i];
 			template += `
 			<div class="row to-do-item">
-				<input onclick="app.controllers.todoController.toggleTodoStatus('${task.id}')" class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="done" aria-label="checkbox" ${task.status == 'true'? 'checked' : ''}>
-				<p>${task.item}<p>
-				<i class="fas fa-minus-circle" onclick="app.controllers.todoController.removeTodo('${task.id}')"></i>
+				<div class="col-sm-8">
+					<input onclick="app.controllers.todoController.toggleTodoStatus('${task.id}')" class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="done" aria-label="checkbox" ${task.status == 'true'? 'checked' : ''}>
+					<label class="task-text">${task.item}</label>
+				</div>
+				<div class="col-sm-2">
+				<i class="fas fa-minus-circle action" onclick="app.controllers.todoController.removeTodo('${task.id}')"></i>
+				</div>
 			</div>
 			`
 		}

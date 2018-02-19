@@ -11,6 +11,9 @@ function QuoteController(){
 			<h3>
 				${quote}
 			</h3>
+			<h5 id="author">
+				-${author}
+			</h5>
 		</blockquote>
 		`
 		quoteElem.innerHTML = template;

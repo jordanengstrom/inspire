@@ -8,7 +8,7 @@ function ImageService() {
 		return $.get(apiUrl, function (res) {
 			res = JSON.parse(res)
 			console.log('Image Data:', res)
-			var imgUrl = res.url;
+			var imgUrl = res.large_url;
 			console.log(imgUrl)
 			callWhenDone(imgUrl);
 		})

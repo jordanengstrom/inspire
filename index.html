@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-	crossorigin="anonymous">
+	 crossorigin="anonymous">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<link rel="stylesheet" href="assets/css/style.css">
 	<title>Engstrom Inspire</title>
@@ -29,15 +29,16 @@
 						<span>To Do List:
 							<span id="task-count">...</span>
 						</span>
-						<i class="fas fa-plus action" onclick="app.controllers.todoController.addTodoFromForm(event)"></i>
-					</div>
-					<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
-						<div class="form-group">
-							<input name="item" type="text" class="form-control" id="input-item" placeholder="Add To Do Item">
-						</div>
 						<!-- I haven't decided if I want this button here or not -->
-						<!-- <button type="submit" class="btn btn-primary">Submit</button> -->
-					</form>
+						<!-- <i class="fas fa-plus action" onclick="app.controllers.todoController.addTodoFromForm(event)"></i> -->
+					</div>
+					<div class="row form-row">
+						<form onsubmit="app.controllers.todoController.addTodoFromForm(event)">
+							<div class="form-group">
+								<input name="item" type="text" class="form-control" id="input-item" placeholder="Add To Do Item">
+							</div>
+						</form>
+					</div>
 					<div id="to-do-items">
 						<!-- to do list gets drawn here -->
 					</div>
@@ -52,7 +53,7 @@
 			<div class="line"></div>
 		</div>
 	</div>
-	
+
 
 
 
