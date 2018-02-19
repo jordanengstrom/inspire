@@ -23,6 +23,7 @@
 
 #weather-shape{
     height: 150px;
+    width: 305px;
     background-color: #fff;
     opacity: 0.9;
     padding: 25px 25px 25px 44px;
@@ -48,7 +49,7 @@ h3{
 }
 
 .quote-row{
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Hind', sans-serif;
     background-color: #fff;
     opacity: 0.75;
     height: 250px;
@@ -91,7 +92,8 @@ hr{
 }
 
 .to-do-item{
-    width: 285px;
+    /* width: 240px; */
+    width: -webkit-fill-available;
     justify-content: left;
     align-items: center;
     padding-left: 37px;
