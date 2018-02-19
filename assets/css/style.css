@@ -92,8 +92,6 @@ hr{
 }
 
 .to-do-item{
-    /* width: 240px; */
-    width: -webkit-fill-available;
     justify-content: left;
     align-items: center;
     padding-left: 37px;
@@ -101,7 +99,6 @@ hr{
     margin-top: 10px;
     margin-left: 0px;
     padding-top: 5px;
-    border-top: solid 1px #cdcfd3;
 }
 
 .task-text{
