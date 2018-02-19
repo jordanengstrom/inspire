@@ -21,14 +21,32 @@
     justify-content: space-between;
 }
 
-#weather{
+#weather-shape{
+    height: 150px;
     background-color: #fff;
     opacity: 0.75;
+    padding: 25px 25px 25px 44px;
+    border-bottom-left-radius: 25% 45%;
+    border-bottom-right-radius: 25% 45%;
+}
+
+.fa-sun{
+    color: #ffe526;
 }
 
 .quote-row{
+    font-family: 'Russo One', sans-serif;
     background-color: #fff;
     opacity: 0.75;
+    height: 250px;
+    text-align: center;
+    align-items: center;
+    border-bottom-left-radius: 10% 35%;
+    border-bottom-right-radius: 10% 35%;
+    border-top-left-radius: 10% 35%;
+    border-top-right-radius: 10% 35%;
+    margin-top: 150px;
+    margin-bottom: 125px;
 }
 
 .to-do{
